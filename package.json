@@ -1,0 +1,55 @@
+{
+  "name": "task-manager",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.3",
+    "@mui/material": "^6.4.3",
+    "@tanstack/react-query": "^5.66.0",
+    "browser-image-compression": "^2.0.2",
+    "cra-template-typescript": "1.2.0",
+    "date-fns": "^4.1.0",
+    "firebase": "^11.3.1",
+    "react": "^18.3.1",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.3.1",
+    "react-firebase-hooks": "^5.1.1",
+    "react-icons": "^5.4.0",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^7.1.5",
+    "react-scripts": "^5.0.1",
+    "react-spinners": "^0.15.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.2.0",
+    "@typescript-eslint/parser": "^8.24.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^4.2.4"
+  }
+}
