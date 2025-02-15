@@ -2,6 +2,7 @@
   "name": "task-manager",
   "version": "0.1.0",
   "private": true,
+  "homepage": " https://soorajjain.github.io/taskBuddy/",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
@@ -23,6 +24,8 @@
     "react-spinners": "^0.15.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -49,6 +52,7 @@
   "devDependencies": {
     "@testing-library/react": "^16.2.0",
     "@typescript-eslint/parser": "^8.24.0",
+    "gh-pages": "^6.3.0",
     "typescript": "^4.9.5",
     "web-vitals": "^4.2.4"
   }
