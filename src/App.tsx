@@ -7,15 +7,14 @@ import Dashboard from "./pages/Dashboard.tsx";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/taskBuddy_alter">
       <AuthProvider>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
-   
+
           <Route element={<PrivateRoute />}>
             <Route path="/" element={<Dashboard />} />
           </Route>
-          
         </Routes>
       </AuthProvider>
     </Router>
