@@ -21,7 +21,11 @@ const LoginPage = () => {
           onClick={login}
           className="text-white bg-black px-8 py-2 rounded-lg font-semibold flex items-center justify-center gap-2"
         >
-          <img src="/assets/images/g_logo.png" className="h-6 w-6" alt="google login" />
+          <img
+            src="/taskBuddy_alter/assets/images/g_logo.png"
+            className="h-6 w-6"
+            alt="google login"
+          />
           <span className="text-lg font-bold">Continue with Google</span>
         </button>
       </div>
@@ -30,14 +34,14 @@ const LoginPage = () => {
       <div className="w-[50%] justify-end items-center relative hidden md:flex">
         <div className="z-50 absolute right-[-50%]">
           <img
-            src="/assets/images/taskBuddy.png"
+            src="/taskBuddy_alter/assets/images/taskBuddy.png"
             alt="Task Manager Preview"
             className="max-w-none !w-[920px] rounded-2xl"
           />
         </div>
         <div className="absolute left-[-10%]">
           <img
-            src="/assets/images/circles_bg.png"
+            src="/taskBuddy_alter/assets/images/circles_bg.png"
             alt="Task Manager Preview"
             className="w-[600px] h-[540px] object-cover rounded-2xl"
           />
@@ -46,19 +50,19 @@ const LoginPage = () => {
 
       {/* Small decorative circles */}
       <img
-        src="/assets/images/circles_bg.png"
+        src="/taskBuddy_alter/assets/images/circles_bg.png"
         alt="Decorative Circle"
         className="absolute top-[-10%] right-[-20%] w-[40%] object-cover md:hidden"
       />
 
       <img
-        src="/assets/images/circles_bg.png"
+        src="/taskBuddy_alter/assets/images/circles_bg.png"
         alt="Decorative Circle"
         className="absolute left-[-30%] top-[20%] w-[40%] object-cover md:hidden"
       />
 
       <img
-        src="/assets/images/circles_bg.png"
+        src="/taskBuddy_alter/assets/images/circles_bg.png"
         alt="Decorative Circle"
         className="absolute bottom-10 left-[30%] w-[40%] object-cover md:hidden"
       />
