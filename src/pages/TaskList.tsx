@@ -21,11 +21,6 @@ export const TaskList = ({ tasks }) => {
   const [showDetailsModal, setShowDetailsModal] = useState(false);
   const [detailsTaskId, setDetailsTaskId] = useState(false);
 
-  useEffect(() => {
-    console.log("selectedTasks", selectedTasks);
-    console.log(Object.keys(selectedTasks).length);
-
-  }, [selectedTasks]);
 
   // New state to manage visibility of each task table
   const [tableVisibility, setTableVisibility] = useState({
@@ -60,7 +55,6 @@ export const TaskList = ({ tasks }) => {
     const updatedTasks = reorderedTasks.map((task, index) => ({ id: task.id, orderIndex: index }));
     try {
       await updateTaskOrder(updatedTasks);
-      console.log("Task order updated successfully");
     } catch (error) {
       console.error('Error updating task order:', error);
     }
@@ -80,7 +74,6 @@ export const TaskList = ({ tasks }) => {
       await Promise.all(selectedTaskIds.map((taskId) => deleteTask(taskId)));
       setTaskList(taskList.filter((task) => !selectedTaskIds.includes(task.id)));
       setSelectedTasks({});
-      console.log(`Deleted ${selectedTaskIds.length} tasks`);
     } catch (error) {
       console.error('Error deleting tasks:', error);
     }
@@ -127,7 +120,6 @@ export const TaskList = ({ tasks }) => {
       });
 
       setSelectedTasks({});
-      console.log(`Status updated for ${selectedTaskIds.length} tasks`);
     } catch (error) {
       console.error('Error updating task status:', error);
     }

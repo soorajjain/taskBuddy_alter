@@ -63,7 +63,6 @@ const TaskForm = ({ onSubmit, onClose }) => {
           return { ...prevTask, attachments: updatedAttachments };
         });
 
-        console.log('File saved with key:', fileKey);
       } catch (error) {
         console.error('Error compressing file:', error);
         setErrors((prevErrors) => ({

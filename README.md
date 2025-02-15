@@ -69,7 +69,7 @@ This is a responsive task management application built using React and TypeScrip
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/task-management-tool.git
+   git clone https://github.com/soorajjain/taskBuddy_alter.git
    cd task-management-tool
    ```
 2. Install dependencies:
@@ -95,7 +95,7 @@ This is a responsive task management application built using React and TypeScrip
 
 ## Deployment
 
-- The project is deployed at: [Live Demo](https://your-deployment-url.com)
+- The project is deployed at: [Live Demo](https://soorajjain.github.io/taskBuddy_alter)
 
 ## Challenges Faced & Solutions
 

@@ -30,7 +30,6 @@ export const addTask = async (task) => {
     throw new Error("User not authenticated.");
   }
 
-  console.log(task);
   try {
     // const attachmentURLs = await Promise.all(
     //   task.attachments.map(async (compressedFile) => {
@@ -56,7 +55,6 @@ export const addTask = async (task) => {
       userId, // Add the userId to the task document
     });
 
-    console.log("Task added with ID: ", docRef.id);
 
     await addActivityHistory(docRef.id, `Task "${task.title}" created`);
 
@@ -95,7 +93,6 @@ export const updateTask = async (id, updatedTask) => {
       }
 
       await updateDoc(taskRef, updatedTask);
-      console.log("Task updated with ID: ", id);
     }
   } catch (e) {
     console.error("Error updating task: ", e);
@@ -124,7 +121,6 @@ export const deleteTask = async (id) => {
 
       await addActivityHistory(id, `Task "${task.title}" marked as deleted`);
       await deleteDoc(taskRef);
-      console.log("Task deleted with ID: ", id);
     }
   } catch (e) {
     console.error("Error deleting task: ", e);
@@ -171,7 +167,6 @@ export const updateTaskOrder = async (tasks) => {
       await updateDoc(taskRef, { orderIndex: index });
     });
     await Promise.all(batchUpdates);
-    console.log("Task order updated successfully");
   } catch (e) {
     console.error("Error updating task order: ", e);
   }
